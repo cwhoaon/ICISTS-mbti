@@ -1,5 +1,6 @@
-const TestResult = ({point}) => {
-  return <div>{Math.max(...point)}</div>
+const TestResult = ({record}) => {
+
+  return <div>{record}</div>
 }
 
 export default TestResult
