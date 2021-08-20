@@ -1,6 +1,5 @@
 const TestResult = ({point}) => {
-  console.log(point)
-  return <div>{point}</div>
+  return <div>{Math.max(...point)}</div>
 }
 
 export default TestResult
