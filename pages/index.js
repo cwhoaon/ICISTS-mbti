@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-       <div onClick={null}>start test</div>
+       <div onClick={()=>{window.location.href="mbtiTest"}}>start test</div>
       </main>
 
       <footer className={styles.footer}>

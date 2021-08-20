@@ -1,6 +1,8 @@
-const TestResult = ({point}) => {
-  console.log(point)
-  return <div>{point}</div>
+const TestResult = ({record}) => {
+
+  const max = ()
+
+  return <div>{record}</div>
 }
 
 export default TestResult
