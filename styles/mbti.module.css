@@ -3,6 +3,14 @@
   height: auto;
 }
 
+.button1 {
+  color:white;
+  background-color: rgb(28, 11, 88);
+  width: 50%;
+  height : 25%;
+  border-radius: 20%;
+  font-size: 30px;
+}
 
 .container {
   min-height: 100vh;

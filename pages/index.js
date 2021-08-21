@@ -12,9 +12,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Image src="/ICISTS_logo.png" width={100} height={70}></Image>
+        <Image src="/ICISTS_logo.png" width={100} height={30}></Image>
         <h1>동아리에서 나에게 딱 맞는 역할은?</h1>
-        <h1 onClick={()=>{window.location.href="mbtiTest"}}>start test</h1>
+        <button className={styles.button1} onClick={()=>{window.location.href="mbtiTest"}}>테스트 시작하기</button>
       </main>
 
       <footer className={styles.footer}>
