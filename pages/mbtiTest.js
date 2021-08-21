@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import TestResult from "../src/component/testResult";
-import { Questions } from "../constant/questions";
+import { Questions, Weights } from "../constant/questions";
 
 const MbtiTest = () => {
   const [stage, setStage] = useState(0)
-  const [record, setRecord] = useState([0,0,0,0,0,0,0,0,0,0])
+  const [record, setRecord] = useState([0,0,0,0,0,0,0,0,0,0,0,0])
 
 
   const checkAnswer = (i) => {
@@ -15,8 +15,7 @@ const MbtiTest = () => {
   }
 
   const goBack = () => {
-    setStage
-    setStage(stage-1)
+    setStage(prev => prev-1)
   }
 
   return <div>
@@ -27,13 +26,12 @@ const MbtiTest = () => {
     <body>
       <h1>ICISTS mbti test</h1>
 
-      {stage < 10 ?
+      {stage < 12 ?
       <div>
         <div>Question {stage+1}</div>
-        <div onClick = {e => checkAnswer(1)}>{Questions[stage][0]}</div>
-        <div onClick = {e => checkAnswer(2)}>{Questions[stage][1]}</div>
-        <div onClick = {e => checkAnswer(3)}>{Questions[stage][2]}</div>
-        <div onClick = {e => checkAnswer(4)}>{Questions[stage][3]}</div>
+        <div onClick = {e => checkAnswer(Weights[stage][0])}>{Questions[stage][0]}</div>
+        <div onClick = {e => checkAnswer(Weights[stage][1])}>{Questions[stage][1]}</div>
+        <div onClick = {goBack}>Go Back</div>
       </div>
       :
       <div>
