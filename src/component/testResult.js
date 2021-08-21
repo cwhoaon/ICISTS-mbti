@@ -1,4 +1,5 @@
 import { mbtiResults } from "../../constant/questions";
+
 const TestResult = ({record}) => {
 
 const result = [0, 0, 0, 0]
