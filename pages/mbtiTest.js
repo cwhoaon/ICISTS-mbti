@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import TestResult from "../src/component/testResult";
-import ProgressBar from "../src/component/progessBar";
+import TestResult from "../src/component/TestResult";
+import ProgressBar from "../src/component/ProgessBar";
 import { Questions, Weights } from "../constant/questions";
 import styles from '../styles/mbti.module.css'
 
@@ -20,36 +20,33 @@ const MbtiTest = () => {
     setStage(prev => prev-1)
   }
 
-  return <div>
+  return (
+    <div>
     <head>
       <title>ICISTS mbti test</title>
     </head>
 
-    <body className={styles.main}>
-      <h1>ICISTS mbti test</h1>
-
+    
       {stage < 12 ?
-      <div>
-        <ProgressBar stage={stage}></ProgressBar>
-        <div className={styles.tlqkf}>Question {stage+1}</div>
-        <button className={styles.button2} onClick = {e => checkAnswer(Weights[stage][0])}>{Questions[stage][0]}</button>
-        <button className={styles.button2} onClick = {e => checkAnswer(Weights[stage][1])}>{Questions[stage][1]}</button>
-        {stage != 0 ?
-         <div onClick = {goBack}>이전으로</div>:<div></div>
-        }
-       
+      <div className={styles.container1}>
+        <main className={styles.main2}>
+          <div className={styles.title}>Question {stage+1}</div>
+          <div className={styles.questionArea}>
+            <button className={styles.button2} onClick = {e => checkAnswer(Weights[stage][0])}>{Questions[stage][0]}</button>
+            <button className={styles.button2} onClick = {e => checkAnswer(Weights[stage][1])}>{Questions[stage][1]}</button>
+          </div>
+
+          {stage != 0 ?
+          <div onClick = {goBack}>이전으로</div>:<div></div>
+          }
+        
+        </main>
       </div>
       :
-      <div>
-        <TestResult record = {record}/>
-      </div>
-
+      <TestResult record = {record}/>
       }
-      
-    </body>  
-
-
   </div>
+  )
 }
 
 export default MbtiTest

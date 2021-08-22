@@ -11,7 +11,6 @@ export const Questions = [
 ["차차은우","은우"],
 ["차은우","은우"],
 ["차차은우","은우"],
-
 ]
 
 export const Weights = [
