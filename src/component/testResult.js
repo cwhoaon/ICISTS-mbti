@@ -30,13 +30,13 @@ return (
 
       <button className={styles.button3} onClick = {()=>{window.location.href = "../"}}>테스트 다시하기</button>
 
-      <a className={styles.bottomBox} href="http://www.icists.org/" target="_blank">
+      <a className={styles.bottomBox} href="http://www.icists.org/">
         <div>ICISTS 공식 홈페이지</div>
       </a>
-      <a className={styles.bottomBox} href="https://www.instagram.com/icistskaist/" target="_blank">
+      <a className={styles.bottomBox} href="https://www.instagram.com/icistskaist/">
         <div>ICISTS 인스타 보러가기</div>
       </a>
-      
+
       <img src="/ICISTS_logo.png" width={130}></img>
       <p><em>icists@icists.org</em></p>
     </main>

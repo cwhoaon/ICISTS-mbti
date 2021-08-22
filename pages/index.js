@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main1}>
-        <a href="http://www.icists.org/" target="_blank">
+        <a href="http://www.icists.org/">
           <img src="/ICISTS_logo.png"></img>
         </a>
         <h1 className={styles.title}>동아리에서 나에게 딱 맞는<br></br>역할은?</h1>
