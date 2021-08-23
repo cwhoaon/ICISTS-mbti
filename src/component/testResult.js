@@ -1,21 +1,10 @@
 import { mbtiResults } from "../../constant/questions";
+import MakeResult from "../function/makeResult"
 import styles from "../../styles/mbti.module.css"
 
 const TestResult = ({record}) => {
 
-const result = [0, 0, 0, 0]
-
-var i, j;
-for (i=0;i<12;i++){
-  for (j=0;j<4;j++){
-    result[j] += record[i][j]
-  }
-}
-for (j=0;j<4;j++){
-  result[j] = result[j]>0?1:0;
-}
-
-const temp = 8*result[0]+4*result[1]+2*result[2]+result[3]
+const temp=MakeResult({record})
 
 return (
   <div className={styles.container3}>
@@ -31,10 +20,12 @@ return (
       <button className={styles.button3} onClick = {()=>{window.location.href = "../"}}>테스트 다시하기</button>
 
       <a className={styles.bottomBox} href="http://www.icists.org/">
+        <img src="/ICISTS_logo.png" width={60}></img>
         <div>ICISTS 공식 홈페이지</div>
       </a>
       <a className={styles.bottomBox} href="https://www.instagram.com/icistskaist/">
-        <div>ICISTS 인스타 보러가기</div>
+       <img src="/instagram.png" width={40}></img>
+        <div>ICISTS 인스타그램</div>
       </a>
 
       <img src="/ICISTS_logo.png" width={130}></img>
