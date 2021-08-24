@@ -84,21 +84,6 @@
   border-color: rgb(28, 11, 88);
 }
 
-.button2:focus {
-  animation-duration: 2s;
-  animation-name: fadeout;
-}
-
-.button2:focus ~ .button2{
-  animation-duration: 2s;
-  animation-name: fadeout;
-}
-
-@keyframes fadeout {
-  from{opacity:1;}
-  to{opacity:0;}
-}
-
 .container3 {
   display: flex;
   min-height: 100vh;
