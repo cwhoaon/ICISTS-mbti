@@ -1,5 +1,5 @@
 {
-  "homepage": "https://cwhoaon.github.io/ICISTS-mbti/",
+  "homepage": "https://icistsmbti.org",
   "name": "mbti",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "gh-pages": "^3.2.3",
