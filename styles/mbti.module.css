@@ -19,19 +19,19 @@
 }
 
 .title {
-  font-size: 28px;
+  font-size: 32px;
   text-align: center;
   line-height: 40px;
 }
 
 .button1 {
-  width: 80%;
-  height: 12%;
+  width: 90%;
+  height: 15%;
   margin-top: 13%;
   color:white;
   background-color: rgb(28, 11, 88);
-  border-radius: 15px;
-  font-size: 23px;
+  border-radius: 7px;
+  font-size: 28px;
   border: none;
 }
 
@@ -43,8 +43,12 @@
   border-width: 3px;
 }
 
+.email {
+  margin-top: 10%;
+  margin-bottom: -10%;
+}
+
 .main2 {
-  border: 1px solid black;
   margin-top: 10vh;
   margin-bottom: 20vh;
   width: 350px;
@@ -55,8 +59,28 @@
   align-items: center;
 }
 
-.progressBar {
-  height: 50px;
+.feather {
+  margin-bottom: -6%;
+}
+
+.progress {
+  width: 350px;
+  height: 5px;
+  background-color: rgb(223, 223, 223);
+}
+
+.progress::-webkit-progress-bar {
+  background-color: rgb(192, 192, 192);
+}
+
+.progress::-webkit-progress-value {
+  background-color: rgb(28, 11, 88);
+}
+
+.progress::-moz-progress-bar {
+  width: 350px;
+  height: 10px;
+  background-color: rgb(28, 11, 88);
 }
 
 .questionArea {
@@ -65,24 +89,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 }
 
 .button2 {
   color:#ffffff;
   background-color: rgb(28, 11, 88);
-  height : 42%;
-  border-radius: 15px;
+  height: 42%;
+  width: 80%;
+  border-radius: 7px;
   font-size: 23px;
   border: none;
 }
 
-.button2:hover {
+.button2:active {
   background: white;
   color: rgb(28, 11, 88);
   border: solid;
   border-color: rgb(28, 11, 88);
 }
+
+
 
 .container3 {
   display: flex;

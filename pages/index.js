@@ -15,10 +15,10 @@ export default function Home() {
         <a href="http://www.icists.org/">
           <img src="/ICISTS_logo.png"></img>
         </a>
-        <h1 className={styles.title}>동아리에서 나에게 딱 맞는<br></br>역할은?</h1>
+        <h1 className={styles.title}>동아리에서 나에게<br></br>딱 맞는역할은?</h1>
         <img src="/nupjuki.png" width={350}></img>
         <button className={styles.button1} onClick={()=>{window.location.href="mbtiTest"}}>테스트 시작!</button>
-        <p><em>icists@icists.org</em></p>
+        <p className={styles.email}><em>icists@icists.org</em></p>
       </main>
     </div>
   )

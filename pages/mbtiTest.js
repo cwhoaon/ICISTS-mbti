@@ -30,6 +30,10 @@ const MbtiTest = () => {
       {stage < 12 ?
       <div className={styles.container1}>
         <main className={styles.main2}>
+          <div>
+            <img className={styles.feather} src="/feather.png"></img>
+            <progress className={styles.progress} value={stage} max={11}></progress>
+          </div>
           <div className={styles.title}>{Questions[stage][0]}</div>
           <div className={styles.questionArea}>
             <button className={styles.button2} onClick = {e => checkAnswer(Weights[stage][0])}>{Questions[stage][1]}</button>
