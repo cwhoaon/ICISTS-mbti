@@ -1,3 +1,23 @@
 <head>
-  <meta http-equiv="refresh" content="0;URL='./pages'" />
+  <title>Welcome to ICISTS!</title>
+  <meta name="description" content="ICISTS mbti test" />
+  <link rel="icon" href="/favicon.ico" />
 </head>
+<body>
+  <div className={styles.container1}>
+    <main className={styles.main1}>
+      <a href="http://www.icists.org/">
+        <img src="/ICISTS_logo.png"></img>
+      </a>
+      <h1 className={styles.title}>동아리에서 나에게<br></br>딱 맞는역할은?</h1>
+      <img src="/nupjuki.png" width={350}></img>
+      <button className={styles.button1} onClick="aaa()">테스트 시작!</button>
+      <script type="text/javascript">
+        function aaa(){
+          window.location.href="mbtiTest"
+        }
+      </script>
+      <p className={styles.email}><em>icists@icists.org</em></p>
+    </main>
+  </div>
+</body>
